@@ -21,6 +21,11 @@
   },
   "description": "",
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "antd": "^4.16.9",
     "express": "^4.17.1",
     "faker": "^5.5.3",
     "faker-es6": "^7.0.0",

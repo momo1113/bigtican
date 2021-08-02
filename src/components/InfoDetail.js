@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import '../App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope,faAddressCard,faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const InfoDetail = ({info}) =>{
 
@@ -12,22 +14,27 @@ const InfoDetail = ({info}) =>{
 
     return (
         <div className="infoDetail">
-            <div>
-                <input value={name} onChange={(e)=>setName(e.target.value)}/> 
-            </div>
-            <div>
-                <input value={email} onChange={(e)=>setEmail(e.target.value)}/> 
-            </div>
-            <div>
-                <input value={address} onChange={(e)=>setAddress(e.target.value)}/> 
-            </div>
-                <input value={url} onChange={(e)=>setUrl(e.target.value)}/> 
-            <div>
-                <input value={phone} onChange={(e)=>setPhone(e.target.value)}/>
-            </div>
-            <div>
-                <input value={company} onChange={(e)=>setCompany(e.target.value)}/> 
-            </div> 
+            <input value={name} type="text" onChange={(e)=>setName(e.target.value)} className="name"/> 
+        <div className="icon_info">
+            <FontAwesomeIcon icon={faEnvelope} /> 
+            <input value={email} type="text" onChange={(e)=>setEmail(e.target.value)} className="info email"/> 
+        </div>
+        <div className="icon_info">
+             <FontAwesomeIcon icon={faAddressCard} /> 
+            <input value={address} type="text" onChange={(e)=>setAddress(e.target.value)} className="info"/> 
+        </div>
+        <div className="icon_info">
+           <FontAwesomeIcon icon={faPhone} />
+           <input value={phone} type="text" onChange={(e)=>setPhone(e.target.value)} className="info"/>
+        </div> 
+        <div className="icon_info">
+            <FontAwesomeIcon icon={faGlobe} />
+            <input value={url} type="text" onChange={(e)=>setUrl(e.target.value)} className="info url"/> 
+        </div> 
+              
+        <div>
+            <input value={company} type="text" onChange={(e)=>setCompany(e.target.value)} /> 
+        </div>        
         </div>
     )
 }
