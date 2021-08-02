@@ -1,0 +1,67 @@
+* { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.app{
+     margin: 30px 15px;   
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.profile{
+  width:30%;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  border-radius:20px 0 0 20px;
+  height: 200px;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 49%, rgba(252,176,69,1) 100%);
+  box-shadow: 0 0 50px #ccc;
+}
+
+img {
+   padding:10% 0px;
+   border-radius: 50%;
+}
+
+.infoDetail{
+   display: flex;
+   flex:2;
+   flex-direction: column; 
+   width: 50%;
+   background-color:blanchedalmond;
+   align-items: flex-start;
+   position: relative;
+   height: 200px;
+   border-radius:0px 20px 20px 0;
+   justify-content:center;
+   box-shadow: 0 0 50px #ccc;
+}
+
+input {
+   /* border-top-style: hidden;
+   border-right-style: hidden;
+   border-left-style: hidden;
+   border-bottom-style: hidden; */
+   padding: 0 50px;
+   border: none;
+   background-color:blanchedalmond;
+   width:100%;
+}
+
+input:focus{
+        outline: none;
+}
+      
+.no-outline:focus {
+   outline: none;
+}
