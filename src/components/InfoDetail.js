@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faAddressCard,faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope,faAddressCard,faGlobe, faPhone, faArchway } from '@fortawesome/free-solid-svg-icons';
 
 const InfoDetail = ({info}) =>{
 
@@ -14,7 +14,9 @@ const InfoDetail = ({info}) =>{
 
     return (
         <div className="infoDetail">
-            <input value={name} type="text" onChange={(e)=>setName(e.target.value)} className="name"/> 
+            
+             <input value={name} type="text" onChange={(e)=>setName(e.target.value)} className="name"/> 
+           
         <div className="icon_info">
             <FontAwesomeIcon icon={faEnvelope} /> 
             <input value={email} type="text" onChange={(e)=>setEmail(e.target.value)} className="info email"/> 
@@ -32,8 +34,9 @@ const InfoDetail = ({info}) =>{
             <input value={url} type="text" onChange={(e)=>setUrl(e.target.value)} className="info url"/> 
         </div> 
               
-        <div>
-            <input value={company} type="text" onChange={(e)=>setCompany(e.target.value)} /> 
+        <div className="icon_company">
+            <FontAwesomeIcon icon={faArchway} />
+            <input value={company} type="text" onChange={(e)=>setCompany(e.target.value)} className="company"/> 
         </div>        
         </div>
     )
